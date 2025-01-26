@@ -1,0 +1,42 @@
+.contact-container {
+    padding: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center; /* Centramos la sección completa */
+    gap: 50px; /* Espacio entre columnas */
+    margin-bottom: 40px;
+    max-width: 1000px; /* Limitamos el ancho para que no ocupe toda la pantalla */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  .contact-column {
+    flex: 1;
+    max-width: 200px; /* Limitar ancho de cada columna para mejorar el centrado */
+    margin: 0 10px;
+  }
+  
+  .maps-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .maps-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .map-item {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .map-item p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  

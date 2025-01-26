@@ -1,0 +1,38 @@
+/* src/components/CategoriesList.css */
+
+.categories-list {
+  text-align: center;
+  padding: 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Mantiene las 4 columnas */
+  gap: 20px;
+  justify-items: center;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.category-item img {
+  width: 750px; /* Tamaño aumentado a 750px */
+  height: 750px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.category-item:hover img {
+  transform: scale(1.1); /* Efecto de hover */
+}
+
+.category-item h3 {
+  margin-top: 10px;
+  font-size: 1.5em; /* Ajuste de tamaño del texto */
+}

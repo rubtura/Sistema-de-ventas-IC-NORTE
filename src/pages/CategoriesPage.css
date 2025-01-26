@@ -1,0 +1,50 @@
+/* src/pages/CategoriesPage.css */
+
+.categories-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.categories-page h1 {
+  font-size: 2.5em;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-group {
+  width: 220px;
+  text-align: left;
+}
+
+.category-group h2 {
+  font-size: 1.2em;
+  color: #388e3c;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #388e3c;
+  padding-bottom: 5px;
+}
+
+.category-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-group li {
+  font-size: 1em;
+  color: #555;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.category-group li:hover {
+  color: #2e7d32;
+  text-decoration: underline;
+}

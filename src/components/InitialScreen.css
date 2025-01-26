@@ -1,0 +1,89 @@
+/* Fondo animado de partículas */
+.particle-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: radial-gradient(circle, #4caf50, #2e7d32, #1b5e20);
+  }
+  
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: move 10s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateY(100vh) scale(0.5);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-100vh) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  /* Superposición */
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  /* Títulos */
+  .initial-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .initial-subtitle {
+    font-size: 1.25rem;
+    color: #f1f1f1;
+    margin-bottom: 2rem;
+  }
+  
+  /* Botones */
+  .initial-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .initial-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .initial-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .initial-button.secondary {
+    background-color: #ffc107;
+  }
+  
+  .initial-button.secondary:hover {
+    background-color: #ffa000;
+  }
+  

@@ -1,0 +1,67 @@
+/* src/components/OfferItem.css */
+
+.offer-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-item img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.offer-item h3 {
+    font-size: 1.4em;
+    color: #2e7d32;
+}
+
+.offer-item p {
+    color: #388e3c;
+}
+
+.offer-item .original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.offer-item .offer-price {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.offer-item .offer-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d32f2f;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+.offer-item button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.offer-item button:hover {
+    background-color: #2e7d32;
+}
+
+.offer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

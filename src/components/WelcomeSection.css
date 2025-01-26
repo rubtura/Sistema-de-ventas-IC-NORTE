@@ -1,0 +1,81 @@
+/* src/components/WelcomeSection.css */
+
+.welcome-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: transparent;
+    margin: 40px auto;
+    max-width: 1400px;
+  }
+  
+  .welcome-content {
+    position: absolute;
+    top: 25%; /* Mover el texto más abajo */
+    left: 5%;
+    z-index: 2;
+    color: #2e7d32;
+    max-width: 40%;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .discount-tag {
+    display: inline-block;
+    background-color: #ffca28;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2e7d32;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  
+  .shop-now-button {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px; /* Añadir espacio extra encima del botón */
+  }
+  
+  .shop-now-button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+  }
+  
+  .welcome-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .welcome-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: none;
+  }
+  
